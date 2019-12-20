@@ -1,96 +1,66 @@
 * {
     box-sizing: border-box;
     font-family: "Ubuntu";
-    color: #646464;
 }
 
-html, body {
-    margin: 0px;
-    padding: 0px;
+.bd {
+    display: flex;
+    flex-flow: column;
 }
 
-.nav-bar ul {
-    margin: 0px;
+.header {
+    background-color: aquamarine;
+    text-align: center;
+    padding: 30px 10px;
 }
 
-.nav-bar li {
+.header h1 {
+    font-family: "Lilita One";
+    font-size: 6vw;
+}
+
+.nav {
+    text-align: center;
+    border-bottom: 1px solid black;
+    overflow: hidden;
+}
+
+.nav li {
     display: inline;
+    padding: 2vw;
 }
 
-.nav-bar a {
-    display: inline-block;
-    padding: .5em;
-    color: white;
+.nav a {
     text-decoration: none;
+    color: black;
 }
 
-.nav-bar a:hover {
-    background-color: rgb(161, 161, 161);
+.nav li:hover {
+    background: rgba(0, 0, 0, 0.5);
 }
 
-.main-nav li {
-    padding: 0 5%;
+
+.main {
+    margin-top: 20px;
+    padding: 10px;
+}
+.main > h2 {
+    text-align: center;   
 }
 
-.main-nav {
-    text-align: center;
-    font-size: 1.1em;
-    font-weight: lighter;
-    border-bottom: 1px solid rgb(189, 189, 189);
+.main > p {
+    text-align: justify;
+    margin-top: 30px;
+    font-size: 20px;
+    line-height: 40px;
 }
 
-.main-heading {
-    background-color: rgba(0, 0, 0, 0.6);
-    background-size: cover;
-    padding-bottom: 30px;
-}
-
-.main-header {
-    text-align: center;
-    margin: 0px;
-    font-size: 4em;
-    font-family: "Lilita One";
-    font-weight: normal;
-    color: white;
-}
-
-.main-header-large {
-    font-size: 9vw;
-}
-
-.content-section {
-    margin: 1em;
-}
-
-.contain {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 0 1.5em;
-}
-
-.section-header {
-    font-family: "Lilita One";
-    font-weight: normal;
-    text-align: center;
-    font-size: 2.5em;
-}
-
-.about-band {
-    float: left;
-    width: 200px;
-    height: 200px;
-    margin: 15px;
-    border-radius: 50%;
-}
-
-.mainf {
-    background-color: rgb(47, 231, 255);
-    padding: .25em 0;
-    width: 100%;
-}
-
-@media screen and (max-width: 500px){
-    .nav-bar {
+@media screen and (max-width: 600px) {
+    .nav {
         display: none;
     }
+    .header h1{
+        font-size: 10vw;
+    }
 }
+
