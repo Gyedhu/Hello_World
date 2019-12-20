@@ -89,8 +89,8 @@ html, body {
     width: 100%;
 }
 
-@media screen and (max-width: 300px){
-    nav {
+@media screen and (-width: 300px){
+    .nav-bar {
         display: none;
     }
 }
