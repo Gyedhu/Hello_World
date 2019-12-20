@@ -64,3 +64,18 @@
     }
 }
 
+<<<<<<< HEAD
+=======
+.mainf {
+    background-color: rgb(47, 231, 255);
+    padding: .25em 0;
+    width: 100%;
+}
+
+@media screen and (max-width: 300px){
+    .nav-bar {
+        display: none;
+    }
+}
+
+>>>>>>> bf7881c2d393c994e84d7a4fcbf4f0258c696afd
