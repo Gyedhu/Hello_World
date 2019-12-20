@@ -55,7 +55,7 @@ html, body {
 }
 
 .main-header-large {
-    font-size: 9em;
+    font-size: 9vw;
 }
 
 .content-section {
@@ -87,4 +87,10 @@ html, body {
     background-color: rgb(47, 231, 255);
     padding: .25em 0;
     width: 100%;
+}
+
+@media screen and (max-width: 500px){
+    .nav-bar {
+        display: none;
+    }
 }
